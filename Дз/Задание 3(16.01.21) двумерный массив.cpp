@@ -21,4 +21,5 @@ int main()
 			cout << ptArr[i * j] << ' ';
 		}
 	}
+	delete[5*4] ptArr;
 }
