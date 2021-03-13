@@ -1,1 +1,54 @@
+#include <iostream>
+#include <ctime>
+#include <random>
+using namespace std;
 
+class Stacks {
+public:
+int num;
+}
+Object1, Object2;
+
+void printVar(Object1.num, Object2.num) {
+	Object1.num = 10;
+	Object2.num = 15;
+	cout << Object1.num << endl;
+	cout << Object2.num << endl;
+}
+
+void changeElem(Object1.num, Object2.num) {
+	Object1.num = 1 + rand() % 10;
+	Object1.num = Object1.num + 2;
+	Object2.num = 1 + rand() % 10;
+	Object2.num = Object1.num + 2;
+	cout << Object1.num << endl;
+	cout << Object2.num << endl;
+}
+
+void sumElem(int k) {
+	Object1.num = 1 + rand() % 10;
+	Object2.num = 1 + rand() % 10;
+	k = Object1.num + Object2.num;
+	cout << k << endl;
+}
+
+void compElem(int num1) {
+	Object1.num = 1 + rand() % 10;
+	Object2.num = 1 + rand() % 10;
+	if (Object1.num > Object1.num) {
+		num1 = Object1.num;
+	else if (Object1.num == Object1.num)
+		cout << "variable are equal";
+	else
+		num1 = Object2.num;
+	}
+}
+
+int main()
+{
+	void printVar(Object1.num, Object2.num);
+	void changeElem(Object1.num, Object2.num);
+	void sumElem(int k);
+	void compElem(int num1);
+		return 0;
+}
