@@ -1,0 +1,57 @@
+#include <iostream>   
+using namespace std;   
+class cCounter {   
+public:         
+	cCounter(int _v) : counter(_v)         
+	{
+		if((_v < 0) || (_v > 999))                 
+	cout << "Неправильное число\n";
+	}           
+void add()         
+{   
+	counter++;             
+    if(counter > 999)                 
+    counter = 0;         
+}          
+void reset()         
+{   
+    counter = 0;         
+}           
+int get()         
+{   
+    return counter;         
+}       
+private:         
+int counter; 
+};   
+int main() 
+{   
+    setlocale(0, "");     
+    int n;     
+    cout << "Введите начальные показания счетчика: ";
+    cin >> n;
+         cCounter counter(n);
+         while(true)
+         {   
+char opt;         
+cout << "Введите +, с, l или e для выхода: ";         
+cin >> opt;                   
+if (opt == '+') {
+    counter.add();
+    break;
+}
+else if (opt == 'c') {
+    counter.reset();
+    break;
+}
+else if (opt == '1') {
+    cout << "Показание счетчика " << counter.get() << "\n";
+    break;
+}
+else if (opt == 'e') {
+    return 0;
+}
+else
+cout << "Неправильный символ!\n";
+         return 0;
+}
