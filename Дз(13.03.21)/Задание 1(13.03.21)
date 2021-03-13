@@ -46,6 +46,7 @@ void compElem(int num1) {
 
 int main()
 {
+srand(time(0));
 	void printVar(Object1.num, Object2.num);
 	void changeElem(Object1.num, Object2.num);
 	void sumElem(int k);
